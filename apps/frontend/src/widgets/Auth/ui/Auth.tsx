@@ -12,7 +12,7 @@ export const Auth: FC<IAuth> = ({ type }) => {
 				<h1 className='md:text-3xl sm:text-2xl font-medium'>
 					<span>Continue to </span>
 					<span className='font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#ffa500] to-[#8400ff]'>
-						AniTrack
+						AniSphere
 					</span>
 				</h1>
 			</div>
