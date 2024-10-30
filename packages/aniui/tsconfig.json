@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		/* Environment */
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"noEmit": true,
+
+		/* Module */
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"isolatedModules": true,
+
+		/* Linting */
+		"strict": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		/* Imports */
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+
+		/* Javascript */
+		"allowJs": true,
+		"jsx": "react-jsx"
+	}
+}

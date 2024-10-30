@@ -1,0 +1,14 @@
+{
+	"name": "docs",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"build": "vitepress build",
+		"dev": "vitepress dev",
+		"lint": "biome check --write ./"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"vitepress": "^1.4.2"
+	}
+}
