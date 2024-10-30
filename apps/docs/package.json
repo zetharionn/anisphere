@@ -8,6 +8,7 @@
 		"lint": "biome check --write ./"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
 		"vitepress": "^1.4.2"
 	}
 }
