@@ -1,17 +1,12 @@
 {
 	"name": "docs",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"private": true,
+	"version": "0.0.0",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"docs:dev": "vitepress dev",
-		"docs:build": "vitepress build",
-		"docs:preview": "vitepress preview"
+		"build": "vitepress build",
+		"dev": "vitepress dev",
+		"lint": "biome check --write ./"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
 	"devDependencies": {
 		"vitepress": "^1.4.2"
 	}
