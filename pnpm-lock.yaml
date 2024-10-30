@@ -171,6 +171,12 @@ importers:
 
   packages/aniui:
     dependencies:
+      '@nextui-org/react':
+        specifier: ^2.4.8
+        version: 2.4.8(@types/react@18.3.12)(framer-motion@11.11.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.14(ts-node@10.9.2(@swc/core@1.7.40(@swc/helpers@0.5.13))(@types/node@22.8.4)(typescript@5.6.3)))
+      framer-motion:
+        specifier: ^11.11.10
+        version: 11.11.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -214,9 +220,21 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.3.3
         version: 4.3.3(vite@5.4.10(@types/node@22.8.4)(sass@1.80.5)(terser@5.36.0))
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
+      postcss:
+        specifier: ^8.4.47
+        version: 8.4.47
+      sass:
+        specifier: ^1.80.5
+        version: 1.80.5
       storybook:
         specifier: 8.3.6
         version: 8.3.6
+      tailwindcss:
+        specifier: ^3.4.14
+        version: 3.4.14(ts-node@10.9.2(@swc/core@1.7.40(@swc/helpers@0.5.13))(@types/node@22.8.4)(typescript@5.6.3))
       typescript:
         specifier: ~5.6.2
         version: 5.6.3
