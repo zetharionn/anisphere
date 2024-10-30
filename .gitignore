@@ -15,6 +15,7 @@ node_modules
 .next/
 out/
 build
+cache
 dist
 dist-ssr
 
