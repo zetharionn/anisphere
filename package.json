@@ -7,13 +7,20 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo build",
-		"dev": "turbo dev",
-		"lint": "turbo lint",
-		"test": "turbo test",
 		"build:frontend": "turbo build --filter=frontend",
+		"build:backend": "turbo build --filter=backend",
+		"build:aniui": "turbo build --filter=aniui",
+		"dev": "turbo dev",
 		"dev:frontend": "turbo dev --filter=frontend",
+		"dev:backend": "turbo dev --filter=backend",
+		"dev:aniui": "turbo dev --filter=aniui",
+		"lint": "turbo lint",
 		"lint:frontend": "turbo lint --filter=frontend",
-		"test:frontend": "turbo test --filter=frontend"
+		"lint:backend": "turbo lint --filter=backend",
+		"lint:aniui": "turbo lint --filter=aniui",
+		"test": "turbo test",
+		"test:frontend": "turbo test --filter=frontend",
+		"test:backend": "turbo test --filter=backend"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
