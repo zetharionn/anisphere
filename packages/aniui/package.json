@@ -4,10 +4,9 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"build": "tsc -b && vite build",
+		"build": "storybook build",
 		"dev": "storybook dev -p 6006",
-		"lint": "biome check --wirte ./src/",
-		"build-storybook": "storybook build"
+		"lint": "biome check --write ./src/"
 	},
 	"dependencies": {
 		"react": "^18.3.1",
