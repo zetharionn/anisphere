@@ -8,15 +8,9 @@ importers:
 
   .:
     devDependencies:
-      prettier:
-        specifier: ^3.2.5
-        version: 3.3.3
       turbo:
         specifier: ^2.2.3
         version: 2.2.3
-      typescript:
-        specifier: 5.5.4
-        version: 5.5.4
 
   apps/docs:
     dependencies:
@@ -5082,7 +5076,8 @@ snapshots:
     optionalDependencies:
       prettier: 3.3.3
 
-  prettier@3.3.3: {}
+  prettier@3.3.3:
+    optional: true
 
   prop-types@15.8.1:
     dependencies:
