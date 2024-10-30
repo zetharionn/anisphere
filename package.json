@@ -11,6 +11,7 @@
     "lint": "turbo lint"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "turbo": "^2.2.3"
   },
   "homepage": "https://github.com/zetharionn/anisphere",
