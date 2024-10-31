@@ -36,14 +36,12 @@ export interface AuthResponse {
 	error: AuthError | null
 }
 
-export interface SessionResponse {
+export interface SessionResponse extends AuthResponse {
 	session: Session | null
-	error: AuthError | null
 }
 
-export interface UserResponse {
+export interface UserResponse extends AuthResponse {
 	user: User | null
-	error: AuthError | null
 }
 
 export interface AuthEventResponse {
