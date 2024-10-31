@@ -18,18 +18,8 @@ export interface IAuthService {
 	getUser: () => Promise<UserResponse>
 	listenAuthEvent: (
 		callback: (event?: AuthChangeEvent, session?: Session | null) => void,
-		authEvent?: AuthEvents
+		authEvent?: AuthChangeEvent
 	) => Promise<AuthEventResponse>
-}
-
-export enum AuthEvents {
-	INITIAL_SESSION = 'INITIAL_SESSION',
-	MFA_CHALLENGE_VERIFIED = 'MFA_CHALLENGE_VERIFIED',
-	PASSWORD_RECOVERY = 'PASSWORD_RECOVERY',
-	SIGNED_IN = 'SIGNED_IN',
-	SIGNED_OUT = 'SIGNED_OUT',
-	TOKEN_REFRESHED = 'TOKEN_REFRESHED',
-	USER_UPDATED = 'USER_UPDATED'
 }
 
 export interface AuthResponse {
