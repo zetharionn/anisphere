@@ -12,7 +12,7 @@ const Catalog = () => {
 			</p>
 			<div>
 				<span>Return to </span>
-				<Link href={ROUTES.HOME} color='primary'>
+				<Link href={ROUTES.HOME}>
 					<span className='text-primary'>home page</span>
 				</Link>
 			</div>
