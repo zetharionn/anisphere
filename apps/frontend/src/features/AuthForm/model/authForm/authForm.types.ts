@@ -1,4 +1,4 @@
-import type { AuthType, AuthMode } from '../../lib'
+import type { AuthMode, AuthType } from '../../lib'
 
 export interface IAuthFormStore {
 	formMode: AuthMode
