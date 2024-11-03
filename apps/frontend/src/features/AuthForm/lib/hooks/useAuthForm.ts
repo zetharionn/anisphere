@@ -1,5 +1,5 @@
 import { useAuthStore } from '@entities/user'
-import { zodResolver } from '@hookform/resolvers/zod'
+import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 import { AuthSchema, type AuthSchemaType, type AuthType } from '../constants'
 
@@ -9,7 +9,7 @@ export const useAuthForm = (type: AuthType) => {
 		formState: { errors },
 		register
 	} = useForm<AuthSchemaType>({
-		resolver: zodResolver(AuthSchema)
+		resolver: valibotResolver(AuthSchema)
 	})
 
 	const signUp = useAuthStore(state => state.signUp)

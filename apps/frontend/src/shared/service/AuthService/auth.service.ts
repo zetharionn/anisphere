@@ -4,7 +4,7 @@ import type {
 	Session,
 	SupabaseClient
 } from '@supabase/supabase-js'
-import type { AuthEvents, IAuthService } from './auth.types'
+import type { IAuthService } from './auth.types'
 
 export class AuthService implements IAuthService {
 	readonly supabaseClient: SupabaseClient
@@ -58,7 +58,7 @@ export class AuthService implements IAuthService {
 
 	async listenAuthEvent(
 		callback: (event?: AuthChangeEvent, session?: Session | null) => void,
-		authEvent?: AuthEvents
+		authEvent?: AuthChangeEvent
 	) {
 		const {
 			data: { subscription }
