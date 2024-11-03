@@ -38,7 +38,7 @@ export const AuthForm: FC<IAuthForm> = memo(({ type }) => {
 			<Input
 				{...register('email')}
 				isRequired
-				type='email'
+				type='text'
 				variant='bordered'
 				radius='sm'
 				label='Email'
