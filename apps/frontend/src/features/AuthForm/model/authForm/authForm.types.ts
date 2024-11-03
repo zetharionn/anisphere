@@ -1,6 +1,8 @@
-export interface IAuthFormStore {
-	formMode: Mode
-	changeFormMode: (mode: Mode) => void
-}
+import type { AuthType, AuthMode } from '../../lib'
 
-export type Mode = 'options' | 'email'
+export interface IAuthFormStore {
+	formMode: AuthMode
+	formType: AuthType
+	changeFormMode: (mode: AuthMode) => void
+	changeFormType: (type: AuthType) => void
+}

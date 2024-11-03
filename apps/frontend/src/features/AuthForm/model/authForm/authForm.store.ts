@@ -1,7 +1,9 @@
 import { create } from 'zustand'
-import type { IAuthFormStore, Mode } from './authForm.types'
+import type { IAuthFormStore } from './authForm.types'
 
 export const useAuthFormStore = create<IAuthFormStore>()(set => ({
 	formMode: 'options',
-	changeFormMode: (mode: Mode) => set({ formMode: mode })
+	formType: 'signUp',
+	changeFormMode: mode => set({ formMode: mode }),
+	changeFormType: type => set({ formType: type })
 }))
