@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
+      '@changesets/cli':
+        specifier: ^2.27.9
+        version: 2.27.9
       turbo:
         specifier: ^2.2.3
         version: 2.2.3
@@ -175,9 +178,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
-      '@changesets/cli':
-        specifier: ^2.27.9
-        version: 2.27.9
       '@types/node':
         specifier: ^22.9.0
         version: 22.9.0
