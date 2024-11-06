@@ -1,7 +1,7 @@
 import { Fetch, QueryParams } from '@/helpers'
 import { Endpoints } from '../../constants'
-import type { AnimeParams } from './Anime.types'
 import type { Release } from '../../types'
+import type { AnimeParams } from './Anime.types'
 
 export const Anime = (params?: AnimeParams) => {
 	return Fetch<Release>(

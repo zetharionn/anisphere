@@ -1,10 +1,10 @@
 import type { IAnilibria } from './Anilibria.types'
 import { Anime, Latest, Random, Search } from './methods'
 import type {
-	RandomParams,
 	AnimeParams,
-	SearchParams,
-	LatestParams
+	LatestParams,
+	RandomParams,
+	SearchParams
 } from './methods'
 
 export class Anilibria implements IAnilibria {
