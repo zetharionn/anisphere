@@ -3,14 +3,16 @@
 	"ui": "tui",
 	"tasks": {
 		"build": {
-			"dependsOn": ["^build"]
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"],
+			"cache": true
 		},
 		"frontend#build": {
-			"env": ["VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY"],
-			"outputs": ["dist/**"]
+			"env": ["VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY"]
 		},
 		"lint": {
-			"dependsOn": ["^lint"]
+			"dependsOn": ["^lint"],
+			"cache": false
 		},
 		"dev": {
 			"cache": false,
