@@ -1,14 +1,34 @@
 {
 	"name": "aniapi",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "AniSphere API Wrapper",
+	"author": "zetharionn",
+	"license": "MIT",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "microbundle build --raw --no-sourcemap -f cjs,esm",
+		"dev": "microbundle watch --raw --no-sourcemap -f cjs,esm",
+		"lint": "biome check --write ./src/",
+		"test": "vitest dev"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"source": "./src/index.ts",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"default": "./dist/index.mjs",
+		"require": "./dist/index.cjs",
+		"types": "./dist/index.d.ts"
+	},
+	"homepage": "https://github.com/zetharionn/anisphere",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zetharionn/anisphere"
+	},
+	"bugs": {
+		"url": "https://github.com/zetharionn/anisphere/issues"
+	},
+	"keywords": ["monorepo", "anisphere"],
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"@changesets/cli": "^2.27.9",
