@@ -1,3 +1,3 @@
-export type ReleaseParams = {
+export type AnimeParams = {
 	aliasOrId: string | number
 }
