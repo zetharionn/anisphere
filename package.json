@@ -35,7 +35,10 @@
 		"test:frontend": "turbo test -F=frontend",
 		"test:backend": "turbo test -F=backend",
 		"test:packages": "turbo test -F=aniui",
-		"test:aniapi": "turbo test -F=aniapi"
+		"test:aniapi": "turbo test -F=aniapi",
+		"release": "changeset",
+		"release:version": "changeset version",
+		"release:publish": "changeset publish"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
@@ -50,10 +53,7 @@
 	"bugs": {
 		"url": "https://github.com/zetharionn/anisphere/issues"
 	},
-	"keywords": [
-		"monorepo",
-		"anisphere"
-	],
+	"keywords": ["monorepo", "anisphere"],
 	"packageManager": "pnpm@8.15.6",
 	"engines": {
 		"node": ">=20.x"
