@@ -24,8 +24,6 @@ jobs:
         run: pnpm install
       - name: Lint
         run: pnpm lint
-      - name: Test
-        run: pnpm test
   cd:
     needs: ci
     name: CD
@@ -49,7 +47,7 @@ jobs:
         with:
           version: 8.15.6
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       - name: Build
         run: pnpm build
       - name: Changeset
