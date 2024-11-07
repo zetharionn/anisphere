@@ -1,0 +1,26 @@
+# Deps
+node_modules
+.pnp
+.pnp.js
+.pnpm-store
+
+# Enviroment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build
+.next/
+out/
+build
+cache
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+pnpm-error.log*

@@ -1,0 +1,41 @@
+{
+	"include": ["./src/**/*"],
+	"compilerOptions": {
+		/* Environment */
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+
+		/* Module */
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"isolatedModules": true,
+
+		/* Declaration */
+		"noEmit": true,
+
+		/* Linting */
+		"strict": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		/* Imports */
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+
+		/* Javascript */
+		"allowJs": true,
+
+		/* Aliases */
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["./*"],
+			"@api/*": ["./api/*"],
+			"@helpers/*": ["./helpers/*"]
+		}
+	}
+}
