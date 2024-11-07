@@ -5,14 +5,17 @@
 		"build": {
 			"dependsOn": ["^build"],
 			"outputs": ["dist/**"],
-			"cache": true
+			"cache": true,
+			"persistent": false
 		},
 		"frontend#build": {
-			"env": ["VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY"]
+			"env": ["VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY"],
+			"outputs": ["dist/**"]
 		},
 		"lint": {
 			"dependsOn": ["^lint"],
-			"cache": false
+			"cache": false,
+			"persistent": false
 		},
 		"dev": {
 			"cache": false,
