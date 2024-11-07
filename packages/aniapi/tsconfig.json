@@ -14,8 +14,7 @@
 		"isolatedModules": true,
 
 		/* Declaration */
-		"declaration": true,
-		"emitDeclarationOnly": true,
+		"noEmit": true,
 
 		/* Linting */
 		"strict": true,
@@ -25,7 +24,6 @@
 
 		/* Imports */
 		"allowSyntheticDefaultImports": true,
-		"allowImportingTsExtensions": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 
