@@ -1,5 +1,9 @@
 
-# AniSphere
+# Deprecation
+
+This repository is deprecated and no longer maintained.
+
+## AniSphere
 
 AniSphere is a space for your favorite anime. It aims to provide the best experience to dive into anime.
 
